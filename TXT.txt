@@ -1,0 +1,8 @@
+step 1 :-
+
+create network in docker 
+docker create network <network_name>
+
+pull mongo image for database and add into network
+docker run --name <mongo_name> --network <network_name> -d --rm mongo
+
